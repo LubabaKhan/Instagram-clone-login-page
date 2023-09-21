@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+body{
+    background-color: #fafafa;
+    font-family: Helvetica,sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.left{
+    position: relative;
+
+}
+#logo{
+    width: 150px;
+}
+.panel{
+    width: 350px;
+    background-color: #fff;
+}
