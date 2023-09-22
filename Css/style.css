@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     font-family: Helvetica,sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 .wrapper{
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex; 
+     flex-direction: row;
+     padding: 150px;
 }
 .left{
     position: relative;
@@ -22,7 +23,21 @@ body{
 #logo{
     width: 150px;
 }
-.panel{
+.panel-login{
     width: 350px;
     background-color: #fff;
+    padding: 50px 50px 0px 50px
+}
+.panel-signup{
+    width: 350px;
+    background-color: #fff;
+    padding: 0px 50px 0px 50px
+}
+.apps{
+    width: 350px;
+    background-color: #fff;
+    padding: 0px 50px 0px 50px
+}
+.appsstores img{
+  width: 120px;
 }
