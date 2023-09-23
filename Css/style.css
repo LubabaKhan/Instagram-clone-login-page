@@ -10,16 +10,27 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .wrapper{
     display: flex; 
-     flex-direction: row;
-     padding: 180px;
+    flex-grow: 1;
+    align-items: center;
+     /* padding: 180px; */
+     justify-content: center;
+}
+
+.right{
+    margin-left: 20px;
+    margin-top: 80px;
 }
 .left{
     position: relative;
-
 }
+.left img{
+    height: 450px;
+}
+ 
 #logo{
     width: 200px;
     margin: auto;
@@ -28,20 +39,13 @@ body{
     width: 350px;
     background-color: #fff;
     padding: 20px 40px;
-    margin: 0px 5px;
+    margin: 0 5px;
     border: 1px solid #dedede;
      border-radius: 2px;
      display: flex;
      flex-direction: column;
 }
-.panel-signup{
-    width: 350px;
-    background-color: #fff;
-    padding: 20px 40px;
-    margin: 10px 5px;
-    border: 1px solid #dedede;
-     border-radius: 2px;
-}
+
 
 .input-box{
     width: 100%;
@@ -74,6 +78,10 @@ form{
     border-radius: 2px;
     color: #fafafa;
     font-size: 15px;
+}
+.button:hover{
+    background-color: rgb(65, 158, 245);
+    cursor: pointer;
 }
 .divider{
     display: flex;
@@ -111,15 +119,58 @@ form{
     font-size: 14px;
     color: #000;
     text-align: center;
-    
 
+}
+.panel-signup{
+    width: 350px;
+    background-color: #fff;
+    padding: 20px 40px;
+    margin: 10px 5px;
+    border: 1px solid #dedede;
+     border-radius: 2px;
+    
+}
+.panel-signup a {
+    text-decoration: none;
+    color:  rgb(65, 158, 245);
+    font-size: bold;
 }
 
 .apps{
+     display: flex;
+     flex-direction: column;
     width: 350px;
-    background-color: #fff;
-    padding: 20px 50px 0px 50px
+    padding: 20px 50px 0px 50px;
+    /* margin-left: 50px; */
+}
+.apps p{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 18px ;
 }
 .appsstores img{
-  width: 120px;
+    display: flex;
+    gap: 10px; 
+    width: 120px;
+    display: inline;
+}
+.appsstores img:hover{
+    cursor: pointer;
+}
+
+footer{
+    max-width: 35em;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    list-style: none;
+    gap: 10px;
+    margin: 20px 0;
+}
+li a{
+    text-decoration: none;
+    color: #8a8a8a
 }
